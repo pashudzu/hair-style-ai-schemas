@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="hair-style-ai-schemas",
+    name="hair_style_ai_schemas",
     version="0.0.1",
     author="pashudzu",
     author_email="pashudzu@gmail.com",
