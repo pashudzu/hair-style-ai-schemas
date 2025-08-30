@@ -6,5 +6,5 @@ class RegistrationForm(BaseModel):
     password: str = Field(..., min_length=6, max_length=128)
 
 class LoginForm(BaseModel):
-    email: EmailStr = Field(...)
+    email_or_username: EmailStr = Field(...)
     password: str = Field(...)
