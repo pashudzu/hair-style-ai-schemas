@@ -1,9 +1,10 @@
 Metadata-Version: 2.4
 Name: hair-style-ai-schemas
-Version: 0.0.1
+Version: 0.0.3
 Summary: Library of schemas for project hair-style-ai
 Author: pashudzu
 Author-email: pashudzu@gmail.com
+License: MIT License
 Project-URL: GitHub, https://github.com/pashudzu/hair-style-ai-schemas
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
@@ -14,6 +15,7 @@ Requires-Dist: pydantic
 Dynamic: author
 Dynamic: author-email
 Dynamic: classifier
+Dynamic: license
 Dynamic: license-file
 Dynamic: project-url
 Dynamic: requires-dist

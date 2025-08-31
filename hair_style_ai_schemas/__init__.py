@@ -1,5 +1,5 @@
-from schemas.auth import *
-from schemas.generate import *
+from .auth import *
+from .generate import *
 
 __all__ = [
     "RegistrationForm",

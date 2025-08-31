@@ -1,2 +1,10 @@
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+build/
+hair_style_ai_schemas.egg-info/
+*.egg-info/
+
 .venv/

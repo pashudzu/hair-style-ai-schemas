@@ -1,11 +1,11 @@
 LICENSE
 README.md
 setup.py
+hair_style_ai_schemas/__init__.py
+hair_style_ai_schemas/auth.py
+hair_style_ai_schemas/generate.py
 hair_style_ai_schemas.egg-info/PKG-INFO
 hair_style_ai_schemas.egg-info/SOURCES.txt
 hair_style_ai_schemas.egg-info/dependency_links.txt
 hair_style_ai_schemas.egg-info/requires.txt
 hair_style_ai_schemas.egg-info/top_level.txt
-schemas/__init__.py
-schemas/auth.py
-schemas/generate.py
