@@ -1,5 +1,5 @@
 import re
-from pydantic import BaseModel, EmailStr, Field, field_validator
+from pydantic import BaseModel, EmailStr, Field, field_validator, ValidationError
 
 class RegistrationForm(BaseModel):
     username: str = Field(...)
@@ -27,3 +27,13 @@ class RegistrationForm(BaseModel):
 class LoginForm(BaseModel):
     email_or_username: str = Field(..., pattern=r"^[a-zA-Z0-9_-. +-@]+$", max_length=254)
     password: str = Field(...)
+
+class AuxiliaryModel(BaseModel):
+    email: EmailStr
+
+def is_email(login: str) -> bool:
+    try:
+        _ = AuxiliaryModel(email=login)
+        return True
+    except ValidationError:
+        return False
