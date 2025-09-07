@@ -25,8 +25,14 @@ class RegistrationForm(BaseModel):
         return v
 
 class LoginForm(BaseModel):
-    email_or_username: str = Field(..., pattern=r"^[a-zA-Z0-9_-. +-@]+$", max_length=254)
+    email_or_username: str = Field(..., max_length=254)
     password: str = Field(...)
+
+    @field_validator("email_or_username")
+    def email_or_username_complexity(cls, v) -> str:
+        if not re.fullmatch(r"^[a-zA-Z0-9_-. +-@]+$", v):
+            raise ValueError("Email_or_username must content only Latin letters, digits and allowed symbols(!@#$%^&* etc).")
+        return v
 
 class AuxiliaryModel(BaseModel):
     email: EmailStr
