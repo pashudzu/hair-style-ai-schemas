@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="hair-style-ai-schemas",
-    version="0.0.5",
+    version="0.0.6",
     author="pashudzu",
     author_email="pashudzu@gmail.com",
     description="Library of schemas for project hair-style-ai",
