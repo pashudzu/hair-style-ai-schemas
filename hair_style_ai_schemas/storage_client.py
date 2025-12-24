@@ -16,3 +16,9 @@ class GetFileForm(BaseModel):
 
 class ListFilesForm(BaseModel):
     bucket_name: str = Field(...)
+
+class CreatePresignedUrlForm(BaseModel):
+    operation: str = Field(...)
+    bucket_name: str = Field(...)
+    file_key: str = Field(...)
+    expires_in: int = Field(...)
