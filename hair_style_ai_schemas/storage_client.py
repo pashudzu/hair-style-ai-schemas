@@ -9,3 +9,7 @@ class UploadFileForm(BaseModel):
         if not v.endswith((".jpg", ".jpeg", ".png")):
             raise ValueError("File must be an image")
         return v
+    
+class GetFileForm(BaseModel):
+    bucket_name: str = Field(...)
+    file_key: str = Field(...)
