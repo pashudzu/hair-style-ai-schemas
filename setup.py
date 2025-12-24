@@ -15,6 +15,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    py_modules=["auth", "generate"],
+    py_modules=["auth", "generate", "storage_client"],
     python_requires=">=3.6",
 )
