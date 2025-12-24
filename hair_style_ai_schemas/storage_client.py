@@ -13,3 +13,6 @@ class UploadFileForm(BaseModel):
 class GetFileForm(BaseModel):
     bucket_name: str = Field(...)
     file_key: str = Field(...)
+
+class ListFilesForm(BaseModel):
+    bucket_name: str = Field(...)
