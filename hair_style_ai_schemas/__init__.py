@@ -1,6 +1,6 @@
 from .auth import *
 from .generate import *
-from storage_client import *
+from .storage_client import *
 
 __all__ = [
     "RegistrationForm",
