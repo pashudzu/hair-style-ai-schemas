@@ -22,3 +22,7 @@ class CreatePresignedUrlForm(BaseModel):
     bucket_name: str = Field(...)
     file_key: str = Field(...)
     expires_in: int = Field(...)
+
+class DeleteFileForm(BaseModel):
+    file_key: str = Field(...)
+    bucket_name: str = Field(...)
