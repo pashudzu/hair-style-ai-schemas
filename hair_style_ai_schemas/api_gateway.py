@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import Optional, Any, Dict
 
-class StorageRequest(BaseModel):
+class StorageResponse(BaseModel):
     status: int
     text: Optional[str] = None
     json: Optional[Dict[str, Any]] = None
