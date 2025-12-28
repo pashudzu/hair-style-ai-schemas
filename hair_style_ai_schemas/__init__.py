@@ -1,6 +1,7 @@
 from .auth import *
 from .generate import *
 from .storage_client import *
+from .api_gateway import *
 
 __all__ = [
     "RegistrationForm",
@@ -12,5 +13,6 @@ __all__ = [
     "GetFileForm",
     "ListFilesForm",
     "CreatePresignedUrlForm",
-    "DeleteFileForm"
+    "DeleteFileForm",
+    "StorageResponse"
 ]
