@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="hair-style-ai-schemas",
-    version="0.0.8",
+    version="0.0.9",
     author="pashudzu",
     author_email="pashudzu@gmail.com",
     description="Library of schemas for project hair-style-ai",
@@ -15,6 +15,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    py_modules=["auth", "generate", "storage_client"],
+    py_modules=["auth", "generate", "storage_client", "api_gateway"],
     python_requires=">=3.6",
 )
